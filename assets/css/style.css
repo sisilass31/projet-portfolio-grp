@@ -18,11 +18,6 @@
 
 body {
   font-family: "Source Code Pro", monospace;
-  display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 3;
-  gap: 40px;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -37,11 +32,63 @@ a {
 /**************general**************/
 
 /**************navbar JULIETTE**************/
-
+.accueil-navbar{
+  display: grid; 
+  grid-template-columns: 100px 550px 550px; 
+  grid-template-rows: 100px; 
+  grid-template-areas: 
+    "accueil-logo accueil-logo accueil-lien";
+  padding: 10px;
+  align-items: center;
+}
+.accueil-lien { 
+  grid-area: accueil-lien;
+ }
+ .accueil-lien a {
+  color: var(--darkbordeau);
+  padding: 20px;
+  font-size: 20px;
+ }
+.accueil-logo { grid-area: accueil-logo; }
+.accueil-logo img{
+  max-width: 80px;
+  max-height: 80px;
+}
 /**************navbar JULIETTE**************/
 
 /**************acceuil JULIETTE**************/
+.accueil-presentation{
+  display: grid; 
+  grid-template-columns: 400px 500px 400px; 
+  grid-template-rows: 500px; 
+  grid-template-areas: 
+    "accueil-nom accueil-photo accueil-icone-contact";
+    "accueil-nom accueil-photo accueil-icone-contact";
+  align-items:center;
+}
 
+.accueil-nom { grid-area: accueil-nom; }
+.accueil-photo { grid-area: accueil-photo; }
+.accueil-photo img {
+  max-width: 500px;
+  max-height: 500px;
+}
+.accueil-icone-contact { grid-area: accueil-icone-contact; }
+.accueil-icone-contact li {
+  font-family: "Source Code Pro", monospace;
+}
+.icon-header{
+  margin-right: 10px;
+}
+.accueil-nom h1{
+  font-size: 5em;
+  text-align: center;
+}
+.accueil-biographie h3{
+  text-align: center;
+  font-size: 150%;
+  margin: 20px;
+}
 /**************acceuil JULIETTE**************/
 
 

@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --darkbordeau: #85182a;
+  --lightbordeau: #db5e6f;
+  --verylightbordeau: #da1e3767;
+  --lightgrey: #e1e1e1;
+}
+
+/**************general**************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**************general**************/
+
+/**************navbar JULIETTE**************/
+
+/**************navbar JULIETTE**************/
+
+/**************acceuil JULIETTE**************/
+
+/**************acceuil JULIETTE**************/
+
+
+
+/**************contact SOUMAYA**************/
+
+/**************contact SOUMAYA**************/
+
+
+
+/**************competences REBECCA**************/
+
+/**************competences REBECCA**************/
+
+
+
+
+/**************projets SIHEM**************/
+
+/**************projets SIHEM**************/
+
+/**************footer SIHEM**************/
+
+/**************footer SIHEM**************/
+

@@ -18,11 +18,6 @@
 
 body {
   font-family: "Source Code Pro", monospace;
-  display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 3;
-  gap: 40px;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -47,7 +42,128 @@ a {
 
 
 /**************contact SOUMAYA**************/
+.contact-container {
+  display: grid;
+  grid-template-areas: 
+  "esp1 contact-form"
+  "contact-info contact-form"
+  "esp2 contact-form";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 30px auto 30px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 30px;
+  max-width: 900px;
+  overflow: hidden;
+  padding: 80px 40px;
+  background-color: var(--verylightbordeau);
+}
 
+.contact-info {
+  grid-area: contact-info;
+  background-color: var(--darkbordeau);
+  color: #fff;
+  padding: 40px;
+  z-index: 99;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.icon {
+  margin-right: 10px; 
+}
+
+.contact-info h2 {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info p, .contact-info a {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 200;
+
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.esp1{
+  grid-area: esp1;
+}
+
+.esp2{
+  grid-area: esp2;
+}
+
+.contact-form {
+  grid-area: contact-form;
+  background-color: var(--white);
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-left: -170px;
+  padding-left: 200px;
+  width: 500px;
+  height: 335px;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+  
+}
+
+.contact-form p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #7a7a7a;
+}
+
+.contact-form input, .contact-form textarea {
+  font-family: "Source Code Pro", monospace;
+  width: calc(90% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--lightgrey);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* espace avant le formulaire */
+.contact-form h2, .contact-form input, .contact-form textarea, .contact-form button{
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  border-color: var(--lightbordeau);
+}
+
+.contact-form button {
+  background-color: var(--darkbordeau);
+  color: var(--white);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 40%;
+}
+
+.contact-form button:hover {
+  background-color: var(--lightbordeau);
+}
 /**************contact SOUMAYA**************/
 
 

@@ -33,58 +33,64 @@ a {
 /**************general**************/
 
 /**************navbar JULIETTE**************/
-.accueil-navbar{
-  display: grid; 
-  grid-template-columns: 100px 550px 550px; 
-  grid-template-rows: 100px; 
-  grid-template-areas: 
-    "accueil-logo accueil-logo accueil-lien";
+.accueil-navbar {
+  display: grid;
+  grid-template-columns: 100px 550px 550px;
+  grid-template-rows: 100px;
+  grid-template-areas: "accueil-logo accueil-logo accueil-lien";
   padding: 10px;
   align-items: center;
 }
-.accueil-lien { 
+.accueil-lien {
   grid-area: accueil-lien;
- }
- .accueil-lien a {
+}
+.accueil-lien a {
   color: var(--darkbordeau);
   padding: 20px;
   font-size: 20px;
- }
-.accueil-logo { grid-area: accueil-logo; }
-.accueil-logo img{
+}
+.accueil-logo {
+  grid-area: accueil-logo;
+}
+.accueil-logo img {
   max-width: 80px;
   max-height: 80px;
 }
 /**************navbar JULIETTE**************/
 
 /**************acceuil JULIETTE**************/
-.accueil-presentation{
-  display: grid; 
-  grid-template-columns: 400px 500px 400px; 
-  grid-template-rows: 500px; 
-  grid-template-areas: 
-    "accueil-nom accueil-photo accueil-icone-contact";
-  align-items:center;
+.accueil-presentation {
+  display: grid;
+  grid-template-columns: 400px 500px 400px;
+  grid-template-rows: 500px;
+  grid-template-areas: "accueil-nom accueil-photo accueil-icone-contact";
+  align-items: center;
 }
 
-.accueil-nom { grid-area: accueil-nom; }
-.accueil-photo { grid-area: accueil-photo; }
+.accueil-nom {
+  grid-area: accueil-nom;
+}
+.accueil-photo {
+  grid-area: accueil-photo;
+}
 .accueil-photo img {
   max-width: 500px;
   max-height: 500px;
 }
-.accueil-icone-contact { grid-area: accueil-icone-contact; }
+.accueil-icone-contact {
+  grid-area: accueil-icone-contact;
+}
 .accueil-icone-contact li {
   font-family: "Source Code Pro", monospace;
 }
-.icon-header{
+.icon-header {
   margin-right: 10px;
 }
-.accueil-nom h1{
+.accueil-nom h1 {
   font-size: 5em;
   text-align: center;
 }
-.accueil-biographie h3{
+.accueil-biographie h3 {
   text-align: center;
   font-size: 150%;
   margin: 20px;
@@ -94,10 +100,10 @@ a {
 /**************contact SOUMAYA**************/
 .contact-container {
   display: grid;
-  grid-template-areas: 
-  "esp1 contact-form"
-  "contact-info contact-form"
-  "esp2 contact-form";
+  grid-template-areas:
+    "esp1 contact-form"
+    "contact-info contact-form"
+    "esp2 contact-form";
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 30px auto 30px;
   margin: auto;
@@ -126,7 +132,7 @@ a {
 }
 
 .icon {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .contact-info h2 {
@@ -135,11 +141,11 @@ a {
   margin-bottom: 20px;
 }
 
-.contact-info p, .contact-info a {
+.contact-info p,
+.contact-info a {
   margin: 10px 0;
   font-size: 18px;
   font-weight: 200;
-
 }
 
 .contact-info a {
@@ -147,11 +153,11 @@ a {
   text-decoration: none;
 }
 
-.esp1{
+.esp1 {
   grid-area: esp1;
 }
 
-.esp2{
+.esp2 {
   grid-area: esp2;
 }
 
@@ -170,7 +176,6 @@ a {
   margin-top: 0;
   font-size: 24px;
   margin-bottom: 10px;
-  
 }
 
 .contact-form p {
@@ -179,7 +184,8 @@ a {
   color: #7a7a7a;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   font-family: "Source Code Pro", monospace;
   width: calc(90% - 20px);
   padding: 10px;
@@ -190,12 +196,16 @@ a {
 }
 
 /* espace avant le formulaire */
-.contact-form h2, .contact-form input, .contact-form textarea, .contact-form button{
+.contact-form h2,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
   margin-left: 20px;
   margin-top: 5px;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   outline: none;
   border-color: var(--lightbordeau);
 }
@@ -217,6 +227,66 @@ a {
 /**************contact SOUMAYA**************/
 
 /**************competences REBECCA**************/
+/* CSS H1 */
+#titre_cpt {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#dev,
+#webdesign {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-shadow: 2px 2px 10px var(--lightgrey);
+}
+
+/* paramétrage border */
+.dev-container,
+.webdesign-container {
+  border: 1px solid var(--darkbordeau);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px var(--verylightbordeau);
+  background: var(--lightbordeau);
+}
+
+#grid_containers_c {
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  justify-content: space-around;
+  align-content: center;
+  padding: 100px;
+}
+
+/* parametrage icons */
+
+.fa-brands,
+.fa-solid {
+  font-size: 35px;
+}
+.grid {
+  display: grid;
+}
+
+/* grid bloc competences */
+.skill1,
+.skill3 {
+  display: grid;
+  justify-items: start;
+
+  align-items: center;
+  margin-top: 40px;
+}
+
+.skill2,
+.skill4 {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  margin-right: 2rem;
+}
 
 /**************competences REBECCA**************/
 
@@ -316,21 +386,27 @@ footer {
   width: 100px;
 }
 
-.footer {  display: grid;
+.footer {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "logo-footer services news";
+  grid-template-areas: "logo-footer services news";
   padding: 30px 50px;
 }
 
-.logo-footer { grid-area: logo-footer; }
+.logo-footer {
+  grid-area: logo-footer;
+}
 
-.services { grid-area: services; }
+.services {
+  grid-area: services;
+}
 
-.news { grid-area: news; }
+.news {
+  grid-area: news;
+}
 
 /**************footer SIHEM**************/

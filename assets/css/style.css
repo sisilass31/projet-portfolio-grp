@@ -46,63 +46,64 @@ a {
 
 /**************competences REBECCA**************/
 /* CSS H1 */
-
-#titre_competences {
+#titre_cpt {
   text-align: center;
+  margin-bottom: 20px;
 }
-
-/* CSS H3 */
 
 #dev,
 #webdesign {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-shadow: 2px 2px 10px var(--lightgrey);
 }
 
-/* CSS DISPLAY GRID DES CONTAINERS */
-#grid_containers_c {
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: auto;
-  gap: 50px 50px;
-  margin-top: 5rem;
-}
-/* CSS */
+/* paramétrage border */
 .dev-container,
 .webdesign-container {
+  border: 1px solid var(--darkbordeau);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px var(--verylightbordeau);
   background: var(--lightbordeau);
-  display: grid;
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 2rem 4rem;
-  box-shadow: 10px 10px 5px var(--verylightbordeau);
 }
 
-.skill {
-  border: 1px solid --lightbordeau;
-}
-
-.skill1,
-.skill2 {
+#grid_containers_c {
   display: grid;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  justify-content: space-around;
   align-content: center;
-  grid-template-columns: 50px;
-  grid-gap: 10px;
+  padding: 100px;
 }
 
-.skill3,
-.skill4 {
-  display: grid;
-  align-content: center;
-  grid-template-columns: 50px;
-  grid-gap: 10px;
-}
+/* parametrage icons */
 
-/* CSS icons */
 .fa-brands,
 .fa-solid {
-  font-size: 50px;
+  font-size: 35px;
+}
+.grid {
+  display: grid;
+}
+
+/* grid bloc competences */
+.skill1,
+.skill3 {
+  display: grid;
+  justify-items: start;
+  justify-content: ;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.skill2,
+.skill4 {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  margin-right: 2rem;
 }
 
 /**************competences REBECCA**************/

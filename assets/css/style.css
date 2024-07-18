@@ -106,7 +106,7 @@ a {
     "esp2 contact-form";
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 30px auto 30px;
-  margin: auto;
+  margin: 50px auto;
   background-color: #fff;
   border-radius: 30px;
   max-width: 900px;
@@ -119,7 +119,7 @@ a {
   grid-area: contact-info;
   background-color: var(--darkbordeau);
   color: #fff;
-  padding: 40px;
+  padding: 30px 40px 22px 40px;
   z-index: 99;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -129,6 +129,10 @@ a {
   align-items: center;
   margin-bottom: 10px;
   padding-top: 15px;
+}
+
+.info-item i {
+  font-size: 28px;
 }
 
 .icon {
@@ -262,8 +266,7 @@ a {
 
 /* parametrage icons */
 
-.fa-brands,
-.fa-solid {
+.icon-competences {
   font-size: 35px;
 }
 .grid {
@@ -295,7 +298,6 @@ a {
 .projects {
   display: grid;
   justify-content: space-around;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px 0px;
   margin: 50px 0;
   grid-template-areas:

@@ -1,97 +1,134 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <!-- link font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <title>Compétences - Portfolio</title>
-  </head>
-  <body>
-    <main>
-      <section id="grid_containers_c">
-        <h1 id="titre_cpt">Mes Compétences</h1>
-        <div class="dev-container grid">
-          <!-- CONTAINER DEV WEB -->
-          <h3 id="dev">Developpement Web</h3>
-          <div class="skill1">
-            <!-- CONTAINER 1 -->
-            <div class="data">
-              <i class="fa-brands fa-html5"></i>
-              <h4>HTML</h4>
-              <p>intermédiaire</p>
-            </div>
-            <div class="data">
-              <i class="fa-brands fa-css3-alt"></i>
-              <h4>CSS</h4>
-              <p>intermédiaire</p>
-            </div>
-            <div class="data">
-              <i class="fa-brands fa-js"></i>
-              <p>javascript</p>
-              <p>les bases</p>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- link font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <title>Compétences - Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav class="accueil-navbar">
+      <div class="accueil-logo">
+        <a href="index.html"><img src="../assets/images/logo-portfolio-grp.png" alt="logo"></a>
+      </div>
+      <div class="accueil-lien">
+        <a href="../index.html">Home</a>
+        <a href="./competences.html">Compétences</a>
+        <a href="./projets.html">Projets</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="grid_containers_c">
+      <h1 id="titre_cpt">Mes Compétences</h1>
+      <div class="dev-container grid">
+        <!-- CONTAINER DEV WEB -->
+        <h3 id="dev">Developpement Web</h3>
+        <div class="skill1">
+          <!-- CONTAINER 1 -->
+          <div class="data">
+            <i class="fa-brands fa-html5 icon-competences"></i>
+            <h4>HTML</h4>
+            <p>intermédiaire</p>
           </div>
-          <div class="skill2">
-            <!-- CONTAINER 2 -->
-            <div class="data">
-              <i class="fa-brands fa-wordpress"></i>
-              <h4>Wordpress</h4>
-              <p>intermédiaire</p>
-            </div>
-            <div class="data">
-            <i class="fa-brands fa-web-awesome"></i>
-              <h4>SQL</h4>
-              <p>les bases</p>
-            </div>
-            <div class="data">
-              <i class="fa-brands fa-java"></i>
-              <h4>Java</h4>
-              <p>les bases</p>
-            </div>
+          <div class="data">
+            <i class="fa-brands fa-css3-alt icon-competences"></i>
+            <h4>CSS</h4>
+            <p>intermédiaire</p>
+          </div>
+          <div class="data">
+            <i class="fa-brands fa-js icon-competences"></i>
+            <p>javascript</p>
+            <p>les bases</p>
           </div>
         </div>
-        <div class="webdesign-container grid">
-          <h3 id="webdesign">Web-Design</h3>
-          <!-- CONTAINER WEB DESIGN -->
-          <div class="skill3">
-            <!-- CONTAINER 3 -->
-            <div class="skill">
-              <i class="fa-brands fa-figma"></i>
-              <h4>Figma</h4>
-              <p>avancé</p>
-            </div>
-            <div class="skill">
-              <i class="fa-solid fa-brush"></i>
-              <h4>Illustrator</h4>
-              <p>intermédiaire</p>
-            </div>
-            <div class="skill">
-              <i class="fa-solid fa-compass-drafting"></i>
-              <h4>photoshop</h4>
-              <p>intermédiaire</p>
-            </div>
+        <div class="skill2">
+          <!-- CONTAINER 2 -->
+          <div class="data">
+            <i class="fa-brands fa-wordpress icon-competences"></i>
+            <h4>Wordpress</h4>
+            <p>intermédiaire</p>
           </div>
-          <div class="skill4">
-            <!-- CONTAINER 4 -->
-            <div class="skill">
-              <i class="fa-brands fa-web-awesome"></i>
-              <h4>premier pro</h4>
-              <p>les bases</p>
-            </div>
-            <div class="skill">
-              <i class="fa-solid fa-blender"></i>
-              <h4>blender</h4>
-              <p>les bases</p>
-            </div>
-            </div>
+          <div class="data">
+            <i class="fa-brands fa-web-awesome icon-competences"></i>
+            <h4>SQL</h4>
+            <p>les bases</p>
+          </div>
+          <div class="data">
+            <i class="fa-brands fa-java icon-competences"></i>
+            <h4>Java</h4>
+            <p>les bases</p>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+      <div class="webdesign-container grid">
+        <h3 id="webdesign">Web-Design</h3>
+        <!-- CONTAINER WEB DESIGN -->
+        <div class="skill3">
+          <!-- CONTAINER 3 -->
+          <div class="skill">
+            <i class="fa-brands fa-figma icon-competences"></i>
+            <h4>Figma</h4>
+            <p>avancé</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-brush icon-competences"></i>
+            <h4>Illustrator</h4>
+            <p>intermédiaire</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-compass-drafting icon-competences"></i>
+            <h4>photoshop</h4>
+            <p>intermédiaire</p>
+          </div>
+        </div>
+        <div class="skill4">
+          <!-- CONTAINER 4 -->
+          <div class="skill">
+            <i class="fa-brands fa-web-awesome icon-competences"></i>
+            <h4>premier pro</h4>
+            <p>les bases</p>
+          </div>
+          <div class="skill">
+            <i class="fa-solid fa-blender icon-competences"></i>
+            <h4>blender</h4>
+            <p>les bases</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-container">
+      <div class="footer">
+        <div class="logo-footer">
+          <img src="../assets/images/logo-portfolio-grp.png" alt="logo">
+        </div>
+        <div class="services">
+          <h3>Services</h3>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+          </ul>
+        </div>
+        <div class="news">
+          <h3>Newsletters</h3>
+          <input type="text">
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+
+    </div>
+  </footer>
+</body>
+
 </html>

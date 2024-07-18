@@ -231,7 +231,6 @@ a {
 /**************contact SOUMAYA**************/
 
 /**************competences REBECCA**************/
-/* CSS H1 */
 #titre_cpt {
   text-align: center;
   margin-bottom: 20px;
@@ -245,23 +244,42 @@ a {
   text-shadow: 2px 2px 10px var(--lightgrey);
 }
 
-/* paramétrage border */
+#dev:hover,
+#webdesign:hover {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  text-shadow: 2px 2px 10px var(--verylightbordeau);
+}
+
+/* paramÃ©trage border */
 .dev-container,
 .webdesign-container {
   border: 1px solid var(--darkbordeau);
   border-radius: 10px;
   box-shadow: 10px 5px 5px var(--verylightbordeau);
   background: var(--lightbordeau);
+  transition: background 0.5s ease, text-shadow 0.5s ease;
 }
+
+.dev-container:hover,
+.webdesign-container:hover {
+  background: var(--white);
+  text-shadow: 2px 2px 10px var(--verylightbordeau);
+}
+
+/* parametrage container grid */
 
 #grid_containers_c {
   display: grid;
-  grid-template-columns: repeat(4, 400px);
-  grid-template-rows: auto;
-  grid-gap: 30px;
+  grid-template-columns: repeat(2, 400px);
   justify-content: space-around;
   align-content: center;
-  padding: 100px;
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
 }
 
 /* parametrage icons */
@@ -269,27 +287,26 @@ a {
 .icon-competences {
   font-size: 35px;
 }
-.grid {
-  display: grid;
-}
 
 /* grid bloc competences */
 .skill1,
 .skill3 {
   display: grid;
+  justify-content: space-evenly;
+  align-content: center;
   justify-items: start;
-
   align-items: center;
-  margin-top: 40px;
 }
 
 .skill2,
 .skill4 {
   display: grid;
+  justify-content: flex-end;
   justify-items: end;
   align-items: center;
-  margin-right: 2rem;
+  margin: 1rem 4rem 1rem;
 }
+
 
 /**************competences REBECCA**************/
 
